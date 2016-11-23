@@ -9,16 +9,21 @@ def grabartxt():
     archi.write('Jorge')
     archi.close()
 
-creartxt()
-grabartxt()
+#creartxt()
+#grabartxt()
 
 def leertxt():
+    caracteres=0
     archi=open ('Lectura.txt','r')
     linea=archi.readline()
-    caracteres=0
+    caracteres=caracteres+len(linea)
     while linea !="":
-        print (linea)
+        #print (linea)
         linea=archi.readline()
         caracteres=caracteres+len(linea)
+        #print(caracteres)
+        #print(len(linea))
     archi.close()
     print(caracteres)
+
+leertxt()
