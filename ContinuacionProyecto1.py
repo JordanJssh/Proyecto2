@@ -48,6 +48,13 @@ def cuadrado():
     l=float(input("\nIgrese el valor del lado: "))
     a=l*l 
     p=l+l+l+l
+    
+    archi=open('ResultadoCuadradoo.txt','a')
+    archi.write('Resultado:\n')
+    archi.write(str(a))
+    archi.write('\n')
+    archi.write(str(p))
+    archi.close()
     print ("\nEl valor del perimetro es: ",p)
     print ("El valor del area es: ",a)
     
@@ -62,6 +69,12 @@ def poligonos_r():
     else:
         print("Ingrese un numero valido")
 
+    archi=open('ResultadosPoligonos.txt','a')
+    archi.write('Resultado:\n')
+    archi.write(str(a))
+    archi.write('\n')
+    archi.write(str(p))
+    archi.close()
     print ("\nEl valor del perimetro es: ",p)
     print ("El valor del area es: ",a)
 
