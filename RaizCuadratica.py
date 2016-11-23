@@ -25,3 +25,25 @@ if dis>0:
 else:
     print("ERROR..!! DISCRIMINANTE NEGATIVO")
 
+def creartxt():
+    archi=open('respuesta.txt','w')
+    archi.close
+def grabartxt():
+    archi=open('respuesta.txt','a')
+    archi.write('X1 es igual a:\n')
+    archi.write(str(x1))
+    archi.write('\nX2 es igual a:\n')
+    archi.write(str(x2))
+    archi.close()
+
+creartxt()
+grabartxt()
+
+def leertxt():
+    archi=open ('respuesta.txt','r')
+    linea=archi.readline()
+    while linea !="":
+        print (linea)
+        linea=archi.readline()
+    archi.close()
+
