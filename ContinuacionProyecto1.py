@@ -21,6 +21,13 @@ def circulo():
     p= pi*radio**2
     print ("\nEl valor del perimetro es: ",p)
     print ("El valor del area es: ",a)
+    archi=open('ResultadoCirculo.txt','a')
+    archi.write('')
+    archi.write('Resultado\n')
+    archi.write(str(a))
+    archi.write('\n')
+    archi.write(str(p))
+    archi.close()
     
 
 def triangulo():
@@ -30,6 +37,12 @@ def triangulo():
     p=x+x+x
     print ("\nEl valor del perimetro es: ",p)
     print ("El valor del area es: ",a)
+    archi=open('ResultadoTriangulo.txt','a')
+    archi.write('Resultado\n')
+    archi.write(str(a))
+    archi.write('\n')
+    archi.write(str(p))
+    archi.close()
 
 def cuadrado():
     l=float(input("\nIgrese el valor del lado: "))
@@ -62,10 +75,7 @@ def crartxt():
     archi=open('ResultadoPoligonosRegulares','w')
     archi.close()
     
-
-def grabartxt():
-    archi=open('ResultadoCirculo.txt','a')
-    archi.write('')
+    
     
 def main():
     menu()
