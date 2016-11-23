@@ -11,6 +11,20 @@ def grabartxt():
     archi.write('Katty Montoya\n')
     archi.write('Jordan Sanchez\n')
     archi.close()
-
+    
 creatxt()
 grabartxt()
+
+def leertxt():
+    archi=open('datos.txt','r')
+    linea=archi.readline()
+    while linea !="":
+        print (linea)
+        linea=archi.readline()
+    archi.close()
+    
+def leertxtenlista():
+    archi=open('datos.txt','r')
+    lineas=archi.readlines()
+    print (lineas)
+    archi.close()
