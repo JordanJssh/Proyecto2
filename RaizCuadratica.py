@@ -12,12 +12,16 @@ a=int(input("Ingrese el valor de a: "))
 b=int(input("Ingrese el valor de b: "))
 c=int(input("Ingrese el valor de c: "))
 
-dis=0
-dis=math.sqrt(math.pow(b,2)-(4*a*c))
+dis=math.pow(b,2)-(4*a*c)
 
 if dis>0:
-    ##poner codigo aqui...
-    print(dis)
+    discrim=math.sqrt(dis)
+    x1=0.0
+    x1=(-b+discrim)/2*a
+    x2=0.0
+    x2=(-b-discrim)/2*a
+    
+    print("El valor de X1 es: ",x1,"El valor de X2 es: ",x2)
 else:
     print("ERROR..!! DISCRIMINANTE NEGATIVO")
 
