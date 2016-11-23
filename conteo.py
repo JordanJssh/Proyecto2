@@ -3,6 +3,7 @@
 
 def creartxt():
     archi=open('Lectura.txt','w')
+    archi=open('Conteo.txt','w')
     archi.close
 def grabartxt():
     archi=open('Lectura.txt','a')
@@ -24,6 +25,12 @@ def leertxt():
         #print(caracteres)
         #print(len(linea))
     archi.close()
+    archi=open('Conteo.txt','a')
+    archi.write(str(caracteres))
+    
     print(caracteres)
 
 leertxt()
+
+
+
