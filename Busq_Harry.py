@@ -1,18 +1,16 @@
+#ESCUELA POLITECNICA NACIONAL
+#Escuela de formacion de tecnologos
 
 #### Busqueda palabra harry
+#Integrantes: Campoverde Jorge-Montoya Katherine-Sanchez Jordan
 
 
 def creartxt():
-    archi=open('Lectura.txt','w')
-    archi=open('Conteo.txt','w')
+    archi=open('harry.txt','w')
+    archi=open('conteo_harry.txt','w')
     archi.close
-def grabartxt():
-    archi=open('Lectura.txt','a')
-    archi.write('Jorge')
-    archi.close()
-
+    
 #creartxt()
-#grabartxt()
 
 def leertxt():
     repetidas=0
@@ -32,14 +30,16 @@ def leertxt():
             if palabras[i]==clave:
                 repetidas=repetidas+1
     archi.close()
+    archi=open('Conteo_harry.txt','a')
+    archi.write('Numero de palabras repetidas es :\n ')
+    archi.write(str(repetidas))
     #for line in lineas:
      #   palabras=line.split(' ')
       #  for p in clave:
        #     if p ==clave:
         #        repetidas +=1
 
-    print("Las palabra Harry se repite: ",repetidas)
-
+    #print("Las palabra Harry se repite: ",repetidas)
 
 leertxt()
 
