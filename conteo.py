@@ -2,11 +2,11 @@
 
 
 def creartxt():
-    archi=open('Harry.txt','w')
+    archi=open('Lectura.txt','w')
     archi=open('Conteo.txt','w')
     archi.close
 def grabartxt():
-    archi=open('Harry.txt','a')
+    archi=open('Lectura.txt','a')
     archi.write('Jorge')
     archi.close()
 
@@ -15,7 +15,7 @@ def grabartxt():
 
 def leertxt():
     caracteres=0
-    archi=open ('Harry.txt','r')
+    archi=open ('Lectura.txt','r')
     linea=archi.readline()
     caracteres=caracteres+len(linea)
     while linea !="":
